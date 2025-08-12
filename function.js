@@ -23,9 +23,32 @@
 
 
 
-myFunction = (a, b) => a * b;
+// myFunction = (a, b) => a * b;
 
-let result = myFunction(30, 2);
+// let result = myFunction(30, 2);
+
+// const car = {type: "Fiat", model: "500", color: "white"};
+
+
+// const person = {};
+
+// person.firstName = "John";
+// person.lastName = "Doe";
+// person.age = 50;
+// person.eyeColor = "blue";
+
+// const person = new Object({firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue"});
+
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue",
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+
 
 console.clear();
-console.log(result);
+console.log(person.fullName());
